@@ -1,11 +1,12 @@
 const React = require("react");
-const Navbar = require("./Navbar");
+// const Navbar = require("./Navbar");
 
-module.exports = function Layout({ title, children, peremennay }) {
+module.exports = function Layout({ title, children }) {
   return (
     <html lang="en">
       <head>
         <title>{title}</title>
+        <link rel="stylesheet" href="/styles/style.css"></link>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -14,7 +15,9 @@ module.exports = function Layout({ title, children, peremennay }) {
         ></link>
       </head>
       <body>
-        <Navbar peremennay={peremennay} />
+        <h1>FLASH CARDS</h1>
+
+        {/* <Navbar peremennay={peremennay} /> */}
         {children}
       </body>
     </html>
