@@ -1,5 +1,4 @@
 const React = require("react");
-// const Navbar = require("./Navbar");
 
 module.exports = function Layout({ title, children }) {
   return (

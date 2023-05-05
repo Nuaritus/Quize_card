@@ -4,6 +4,7 @@ const QuestionPage = require("../components/QuestionPage");
 const { QA } = require("../db/models");
 
 router.get("/:idTopic", async (req, res) => {
+  console.log(req.body);
   const questionsAnswers = await QA.findAll({
     where: {
       idTopic: req.params.idTopic,

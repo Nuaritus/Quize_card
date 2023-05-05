@@ -1,7 +1,8 @@
 const React = require("react");
-
+const express = require("express");
+const app = express();
 function TopicPage({ title, topic }) {
-  //   console.log(topic);
+  console.log(app.locals);
 
   return (
     <div>

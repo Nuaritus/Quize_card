@@ -12,6 +12,7 @@ function StartPage({ title }) {
           </button>
         </form>
       </div>
+      <script defer src="/js/index.js" />
     </Layout>
   );
 }
