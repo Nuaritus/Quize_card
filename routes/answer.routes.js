@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const AnswerPage = require("../components/AnswerPage");
+// const AnswerPage = require("../components/AnswerPage");
 const { QA } = require("../db/models");
 
 router.get("/:idAnswer", async (req, res) => {

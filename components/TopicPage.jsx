@@ -5,7 +5,7 @@ function TopicPage({ title, topic }) {
 
   return (
     <div>
-      <a href={`question/${topic.id}`}>{topic.Name}</a>
+      <a href={`question/${topic.id}`}>{topic.topicName}</a>
     </div>
   );
 }
