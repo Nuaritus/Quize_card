@@ -1,0 +1,340 @@
+"use strict";
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.bulkInsert("QAs", [
+      {
+        question: '1. В каком году вышел фильм "Служебный роман"?',
+        answ1: "a) 1980",
+        answ2: "b) 1982",
+        answ3: "c) 1984",
+        answ4: "d) 1986",
+        correctAnsw: "b) 1982",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '2. Кто сыграл главную женскую роль в фильме "Служебный роман"?',
+        answ1: "a) Людмила Гурченко",
+        answ2: "b) Алла Пугачева",
+        answ3: "c) Анна Самоквасова",
+        answ4: "d) Нина Дорошинская",
+        correctAnsw: "a) Людмила Гурченко",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '3. Какой город был выбран для съемок фильма "Служебный роман"?',
+        answ1: "a) Москва",
+        answ2: "b) Ленинград",
+        answ3: "c) Киев",
+        answ4: "d) Рига",
+        correctAnsw: "d) Рига",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '4. Как называется персонаж, которого сыграл Андрей Мягков в фильме "Служебный роман"?',
+        answ1: "a) Любовь",
+        answ2: "b) Анна",
+        answ3: "c) Алексей",
+        answ4: "d) Андрей",
+        correctAnsw: "c) Алексей",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '5. Какое звание имел главный герой фильма "Служебный роман"?',
+        answ1: "a) Капитан",
+        answ2: "b) Майор",
+        answ3: "c) Полковник",
+        answ4: "d) Генерал",
+        correctAnsw: "b) Майор",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '6. Какое место занимает фильм "Служебный роман" в списке лучших фильмов советской эпохи?',
+        answ1: "a) Первое",
+        answ2: "b) Второе",
+        answ3: "c) Третье",
+        answ4: "d) Четвертое",
+        correctAnsw: "a) Первое",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '7. Как называется автор романа, на котором основан сценарий фильма "Служебный роман"?',
+        answ1: "Владимир Набоков",
+        answ2: "Михаил Булгаков",
+        answ3: "Виктор Пелевин",
+        answ4: "Вениамин Каверин",
+        correctAnsw: "Вениамин Каверин",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '8. Кто сыграл роль начальника главного героя в фильме "Служебный роман"?',
+        answ1: "Юрий Яковлев",
+        answ2: "Олег Басилашвили",
+        answ3: "Анатолий Папанов",
+        answ4: "Георгий Бурков",
+        correctAnsw: "Анатолий Папанов",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '9. Какое животное встречается в фильме "Служебный роман" и становится символом любви главных героев?',
+        answ1: "Кот",
+        answ2: "Собака",
+        answ3: "Лошадь",
+        answ4: "Медведь",
+        correctAnsw: "Кот",
+        idTopic: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question: '1. В каком городе происходят события фильма "Джокер"?',
+        answ1: "Готэм",
+        answ2: "Нью-Йорк",
+        answ3: "Лондон",
+        answ4: "Лос-Анджелес",
+        correctAnsw: "Готэм",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '2. Какую профессию имеет главный герой в начале фильма "Джокер"?',
+        answ1: "клоун",
+        answ2: "музыкант",
+        answ3: "певец",
+        answ4: "актер",
+        correctAnsw: "клоун",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          "3. Какое псевдоним использует Джокер на телешоу Мюррея Фрэнка?",
+        answ1: "Бэтмен",
+        answ2: "Джокер",
+        answ3: "Комик",
+        answ4: "Смайлик",
+        correctAnsw: "Комик",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          "4. Как зовут девушку, с которой главный герой общается в лифте?",
+        answ1: "Софи",
+        answ2: "Эмили",
+        answ3: "Лиза",
+        answ4: "Кейт",
+        correctAnsw: "Софи",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question: '5. Кто был режиссером фильма "Джокер"?',
+        answ1: "Martin Scorsese",
+        answ2: "Christopher Nolan",
+        answ3: "Todd Phillips",
+        answ4: "Quentin Tarantino",
+        correctAnsw: "Todd Phillips",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          "6. Какой прозвище Джокера появляется на финальных кадрах фильма?",
+        answ1: "Джокер",
+        answ2: "Клоун",
+        answ3: "Смайлик",
+        answ4: "Палач",
+        correctAnsw: "Джокер",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question: '7. В каком городе происходят события фильма "Джокер"?',
+        answ1: "Готэм",
+        answ2: "Нью-Йорк",
+        answ3: "Лондон",
+        answ4: "Лос-Анджелес",
+        correctAnsw: "Готэм",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '8. Какую профессию имеет главный герой в начале фильма "Джокер"?',
+        answ1: "клоун",
+        answ2: "музыкант",
+        answ3: "певец",
+        answ4: "актер",
+        correctAnsw: "клоун",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          "9. Какое псевдоним использует Джокер на телешоу Мюррея Фрэнка?",
+        answ1: "Бэтмен",
+        answ2: "Джокер",
+        answ3: "Комик",
+        answ4: "Смайлик",
+        correctAnsw: "Комик",
+        idTopic: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+
+      {
+        question:
+          '1. Кто из персонажей фильма "Омерзительная восьмёрка" не был наемным убийцей?',
+        answ1: "a) Дэйзи Домергу",
+        answ2: "b) Джон Рут",
+        answ3: "c) Уоррен",
+        answ4: "d) Мэйбл",
+        correctAnsw: "b) Джон Рут",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '2. В каком году происходят события фильма "Омерзительная восьмёрка"?',
+        answ1: "a) 1862",
+        answ2: "b) 1877",
+        answ3: "c) 1890",
+        answ4: "d) 1905",
+        correctAnsw: "c) 1890",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '3. Кто из персонажей фильма "Омерзительная восьмёрка" был шерифом в Ред-Роке?',
+        answ1: "a) Крис Мэнсон",
+        answ2: "b) Джон Рут",
+        answ3: "c) Уоррен",
+        answ4: "d) Маркс",
+        correctAnsw: "a) Крис Мэнсон",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '4. Какой персонаж фильма "Омерзительная восьмёрка" был владельцем "Миньоны"?',
+        answ1: "a) Дэйзи Домергу",
+        answ2: "b) Орен Ишии",
+        answ3: "c) Джо Гэддон",
+        answ4: "d) Джон Рут",
+        correctAnsw: "c) Джо Гэддон",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '5. Как звали персонажа, которого играл Тим Рот в фильме "Омерзительная восьмёрка"?',
+        answ1: "a) Освальд Мобрэй",
+        answ2: "b) Джон Рут",
+        answ3: "c) Питер Мансон",
+        answ4: "d) Уоррен",
+        correctAnsw: "a) Освальд Мобрэй",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '6. Кто из персонажей фильма "Омерзительная восьмёрка" был хозяином лавки в Ред-Роке?',
+        answ1: "a) Маркс",
+        answ2: "b) Крис Мэнсон",
+        answ3: "c) Боб",
+        answ4: "d) Орен Ишии",
+        correctAnsw: "c) Боб",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '7. Кто из персонажей фильма "Омерзительная восьмёрка" не был наемным убийцей?',
+        answ1: "a) Дэйзи Домергу",
+        answ2: "b) Джон Рут",
+        answ3: "c) Уоррен",
+        answ4: "d) Мэйбл",
+        correctAnsw: "b) Джон Рут",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '8. В каком году происходят события фильма "Омерзительная восьмёрка"?',
+        answ1: "a) 1862",
+        answ2: "b) 1877",
+        answ3: "c) 1890",
+        answ4: "d) 1905",
+        correctAnsw: "c) 1890",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        question:
+          '9. Кто из персонажей фильма "Омерзительная восьмёрка" был шерифом в Ред-Роке?',
+        answ1: "a) Крис Мэнсон",
+        answ2: "b) Джон Рут",
+        answ3: "c) Уоррен",
+        answ4: "d) Маркс",
+        correctAnsw: "a) Крис Мэнсон",
+        idTopic: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+    ]),
+      {};
+  },
+
+  async down(queryInterface, Sequelize) {
+    /**
+     * Add commands to revert seed here.
+     *
+     * Example:
+     * await queryInterface.bulkDelete('People', null, {});
+     */
+  },
+};
