@@ -8,8 +8,10 @@ button {
   outline: 0;
   font: inherit;
   color: inherit;
-  background-color: transparent;
+  /* background-color: transparent; */
   cursor: pointer;
+  background: red;
+  background-color: red;
 }
 
 :active,
@@ -20,14 +22,60 @@ button {
 }
 /* шрифт везде наследуется */
 body {
+  /* display: flex; */
   font-family: "IBM Plex Mono";
+  color: aqua;
+  /* background-color: rgb(124, 216, 186); */
+  background-image: url("MyCollages.jpg");
+  background-size: 100%;
 }
+
+h1 {
+  font-size: 20px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  /* animation-direction: reverse; */
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transition: 5s;
+}
+
+@keyframes slidein {
+  from {
+    /* margin-left: 0%; */
+    width: 250%;
+    color: rgb(93, 240, 130);
+    font-size: 30px;
+    width: 200%;
+  }
+
+  to {
+    margin-left:33%;
+    width: 150%;
+    color: rgb(93, 240, 130);
+    font-size: 18px;
+    width: 100%;
+
+    font-size: 450%;
+    /* margin-right: 25%; */
+    width: 100%;
+    /* } */
+
+    /* animation-delay: 3s; */
+    /* animation-duration: 1ms; */
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: 1 */
+    /* animation-name: delayChangeColor;  */
+  }
+}
+
 /* основная часть */
 
 h1 {
-  text-align: center;
+  margin-left: -5px;
+  /* text-align:center; */
   margin-top: 44px;
-  margin-bottom: 86px;
+  /* margin-bottom: 86px; */
   font-size: 70px;
   /* letter-spacing: -0.1em; */
   font-weight: 600;
@@ -37,17 +85,18 @@ h1 {
 #input {
   display: block;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 55px;
 
-  border: 3px black solid;
+  border: 3px rgb(50, 51, 45) solid;
   width: 300px;
   height: 56px;
-  border: 2px solid black;
+  border: 2px solid rgb(117, 129, 23);
   border-radius: 14px;
 }
 .input::placeholder {
+  margin-top: 25px;
   color: grey;
-  font-size: 18px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -57,19 +106,20 @@ h1 {
 
   display: block;
   /* justify-self: flex-end; */
-  background-color: black;
-  color: white;
+  background-color: rgb(152, 247, 9);
+  color: rgb(20, 20, 19);
   border-radius: 8px;
+  border-color: rgb(199, 4, 4);
   width: 107px;
   height: 38px;
   font-size: 18px;
 }
-.cont {
+/* .cont {
   /* display: flex;  */
-  /* justify-content: center; */
-  /* border: 2px black solid; */
-}
-::-webkit-input-placeholder {
+/* justify-content: center; */
+/* border: 2px black solid; */
+/* } */
+*/ ::-webkit-input-placeholder {
   text-align: center;
 }
 
@@ -85,4 +135,53 @@ h1 {
 
 :-ms-input-placeholder {
   text-align: center;
+}
+.newDiv {
+  /* display: flex; */
+  font-size: 21px;
+  text-align: center;
+  margin-left: 540px;
+  margin-top: 10px;
+  background-color: rgb(152, 247, 9);
+  border-radius: 25px;
+  width: 350px;
+  color: black;
+}
+.newDiv {
+  font-size: 20px;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-direction: reverse;
+  /* animation-fill-mode: forwards; */
+  animation-iteration-count: 1;
+  transition: 3s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+    color: rgb(93, 240, 130);
+    /* font-size: 30px; */
+    width: 90%;
+  }
+
+  to {
+    margin-left:33%;
+    /* width: 150%; */
+    color: rgb(93, 240, 130);
+    font-size: 18px;
+    width: 100%;
+
+    font-size: 450%;
+    margin-right: 25%;
+    width: 100%;
+    /* } */
+
+    /* animation-delay: 3s; */
+    /* animation-duration: 1ms; */
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: 1 */
+    /* animation-name: delayChangeColor;  */
+  }
 }
